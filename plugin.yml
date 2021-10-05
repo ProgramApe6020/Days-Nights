@@ -1,0 +1,5 @@
+name: Days_Nights
+main: org.programape6020.spigot.Days_Nights
+version: 1.0
+api-version: 1.17
+commands: 
