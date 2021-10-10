@@ -16,7 +16,7 @@ public class ServerListener implements Listener {
 		//Get player ID and send time information
 		Player player_join = event.getPlayer();
 		String player_name = player_join.getName().toString();
-		Bukkit.broadcastMessage("Welcome " + player_name + "to the server.");	//Send Message
+		Bukkit.broadcastMessage("Welcome " + player_name + " to the server.");	//Send Message
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");		//Set date format
 		Bukkit.broadcastMessage("Now is " + df.format(new Date()));				//Send Message
 	}
