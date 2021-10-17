@@ -9,10 +9,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Days_Nights extends JavaPlugin {
-	 //Load plugin execution
+	 public static JavaPlugin plugin;
 	 static Map<World, Boolean> addDay = new HashMap<>();
+	//Load plugin execution
 	 @Override
 	 public void onEnable() {
+		 plugin = this;
+	     this.saveDefaultConfig();
 		 System.out.println("Days Nights loaded successfully");
 		 World world = Bukkit.getWorld("world");
 		 //Register event listener
