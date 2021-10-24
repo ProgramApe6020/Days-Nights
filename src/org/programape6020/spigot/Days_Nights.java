@@ -17,7 +17,7 @@ public class Days_Nights extends JavaPlugin {
 		 plugin = this;
 	     this.saveDefaultConfig();
 		 System.out.println("Days Nights loaded successfully");
-		 String WorldName = Days_Nights.super.getConfig().getString("world");
+		 String WorldName = Days_Nights.super.getConfig().getString("world");	 
 		 World world = Bukkit.getWorld(WorldName);
 		 //Register event listener
 		 getServer().getPluginManager().registerEvents(new ServerListener(), this);
